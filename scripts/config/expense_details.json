@@ -1,0 +1,10 @@
+{
+    "expense_type": {
+        "a": "Rent",
+        "b": "Groceries",
+        "c": "Bills",
+        "d": "Other"
+    }
+
+
+}
