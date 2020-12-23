@@ -1,9 +1,14 @@
 {
     "expense_type": {
-        "a": "Rent",
-        "b": "Groceries",
-        "c": "Bills",
-        "d": "Other"
+        "a": "Credit",
+        "b": "Debit"
+    },
+    "expense_name": {
+        "a" : "Rent",
+        "b" : "Groceries",
+        "c" : "Utilities",
+        "d" : "Bills",
+        "e" : "Other"
     }
 
 
