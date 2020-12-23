@@ -14,6 +14,9 @@ logger=logging.getLogger(__name__)
 
 
 def get_expense_options(keyvalue):
+    """
+    takes the key value of the option to be selected and returns the options related to that key
+    """
     try:
         print('please select a option from below : ')
         with open('config/expense_details.json') as f:
@@ -27,7 +30,7 @@ def get_expense_options(keyvalue):
 
 def selected_option(keyvalue):
     """
-    
+    takes the key value as input and returns value for selected key 
     """
     try:
         options = get_expense_options(keyvalue)
@@ -39,8 +42,15 @@ def selected_option(keyvalue):
 
 
 def write_object_to_file(expense):
-    with open("../data/test.json",'w') as output:
-        json.dump(expense,output)
+    """
+    writes the expense object to the json file
+    """
+    try:
+        with open("../data/test.json",'w') as output:
+            json.dump(expense,output)
+    except Exception as e:
+        logging.exception(e)
+        return None
 
 
 def expense_calculator():
