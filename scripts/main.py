@@ -16,6 +16,7 @@ logger=logging.getLogger(__name__)
 def get_expense_options(keyvalue):
     """
     takes the key value of the option to be selected and returns the options related to that key
+    returns none in case of error
     """
     try:
         print('please select a option from below : ')
