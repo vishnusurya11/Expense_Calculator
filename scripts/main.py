@@ -4,6 +4,7 @@ import expense_calculation_class_objects
 import pickle
 import pprint
 import json
+import yaml
 import time
 from datetime import datetime
 
@@ -49,6 +50,8 @@ def write_object_to_file(expense):
     try:
         with open("../data/test.json",'w') as output:
             json.dump(expense,output)
+        with open("../data/test.yaml",'w') as output:
+            yaml.dump(expense, output, default_flow_style=False)
     except Exception as e:
         logging.exception(e)
         return None
@@ -60,9 +63,10 @@ def expense_calculator():
     """
     expense = dict()
     expense["id"] =  int(round(time.time() * 1000)) 
-    expense["create_time"] = datetime.now().strftime("%m -%d -%Y  %H:%M:%S PST") 
-    expense["expense_type"] = selected_option("expense_type")
-    expense["expense_name"] = selected_option("expense_name")
+    expense["create_time"] = datetime.now().strftime("%m-%d-%Y  %H:%M:%S PST") 
+    expense["Type"] = selected_option("Type")
+    expense["Category"] = selected_option("Category")
+    expense["Amount"] = int(input("Enter the amount : $ "))
     write_object_to_file(expense)
 
 if __name__ == "__main__":
