@@ -1,6 +1,7 @@
 # File Formats
 *.log
 *.json
+*.yaml
 
 
 
