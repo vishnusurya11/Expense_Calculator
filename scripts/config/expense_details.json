@@ -1,14 +1,20 @@
 {
-    "expense_type": {
-        "a": "Credit",
-        "b": "Debit"
+    "Type": {
+        "1": "Credit",
+        "2": "Debit"
     },
-    "expense_name": {
-        "a" : "Rent",
-        "b" : "Groceries",
-        "c" : "Utilities",
-        "d" : "Bills",
-        "e" : "Other"
+    "Category": {
+        "1" : "Utilities",
+        "2" : "Groceries",
+        "3" : "Travel",
+        "4" : "Home",
+        "5" : "Crypto",
+        "6" : "Investments",
+        "7" : "Savings for investments",
+        "8" : "Options",
+        "9" : "Savings",
+        "10" : "Emergency",
+        "11" : "Misc"
     }
 
 
