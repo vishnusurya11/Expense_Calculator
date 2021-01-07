@@ -7,3 +7,4 @@
 
 # do not ignore
 !expense_details.json
+!path_details.json
